@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик кликов</title>
+</head>
+<body>
+    <h1>Количевство кликов: <span id="counter">0</span></h1>
+    <button id="clickButton">Нажми на меня!</button>
+
+    <script>
+        let count=0;
+        let button=document.getElementById("clickButton");
+        let counterDisplay=document.getElementById("counter");
+        button.onclick=function(){
+            count++;
+            counterDisplay.textContent=count;
+        };
+    </script>
+</body>
+</html>
